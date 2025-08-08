@@ -49,26 +49,52 @@ function initCommon(): void {
     });
   }
 
-  // Lazy show gallery items
-  const revealElements = document.querySelectorAll<HTMLElement>('.gallery-item, .collection-item');
-  if (revealElements.length) {
-    const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const el = entry.target as HTMLElement;
-          el.style.opacity = '1';
-          el.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.1, rootMargin: '0px 0px -100px 0px' });
-
-    revealElements.forEach((el) => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(30px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      revealObserver.observe(el);
+  // Scroll reveals for major blocks
+  const revealSelectors = [
+    '.gallery-item',
+    '.collection-item',
+    '.section-title',
+    '.section-description',
+    '.studio-photo-item',
+    '.studio-gallery-item',
+    '.about-content',
+    '.mission-item',
+    '.value-item',
+    '.team-member',
+  ];
+  const revealElements = document.querySelectorAll<HTMLElement>(revealSelectors.join(','));
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        (entry.target as HTMLElement).classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
     });
-  }
+  }, { threshold: 0.15, rootMargin: '0px 0px -10% 0px' });
+  revealElements.forEach((el) => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+  });
+
+  // Headline inline animation (split into spans)
+  const splitTargets = document.querySelectorAll<HTMLElement>('.hero-title, .section-title');
+  const lineObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        (entry.target as HTMLElement).classList.add('animate');
+        lineObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+  splitTargets.forEach((el) => {
+    if (!el.classList.contains('split-lines')) {
+      const text = el.textContent || '';
+      const words = text.split(/\s+/).filter(Boolean);
+      el.innerHTML = words.map((w) => `<span class="line">${w}&nbsp;</span>`).join('');
+      el.classList.add('split-lines');
+    }
+    lineObserver.observe(el);
+  });
 }
 
 function initIndex(): void {
@@ -97,6 +123,11 @@ function initIndex(): void {
     } else {
       observer.observe(img);
     }
+  });
+
+  // Prevent hero artwork images from interfering on click/touch
+  document.querySelectorAll<HTMLImageElement>('.floating-artwork-img').forEach((img) => {
+    img.addEventListener('click', (e) => e.preventDefault(), { passive: true });
   });
 }
 
@@ -168,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (path.endsWith('/index.html') || path === '/' || path.endsWith('/')) initIndex();
   if (path.endsWith('/gallery.html')) initGallery();
   if (path.endsWith('/contact.html')) initContact();
-  if (path.endsWith('/artwork-detail.html')) initArtworkDetail();
+  // artwork detail kaldırıldı
 });
 
 

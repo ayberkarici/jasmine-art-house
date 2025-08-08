@@ -13,10 +13,7 @@ export default defineConfig({
         about: 'about.html',
         gallery: 'gallery.html',
         studio: 'studio.html',
-        contact: 'contact.html',
-        artwork: 'artwork-detail.html',
-        // admin: 'admin.html',
-        // login: 'login.html'
+        contact: 'contact.html'
       }
     }
   },
