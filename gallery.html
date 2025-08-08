@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri - Jasmine Art House. Rönesans’tan Modern’e özenle seçilmiş başyapıtlar koleksiyonu.">
+    <meta property="og:title" content="Galeri - Jasmine Art House">
+    <meta property="og:description" content="Zamansız başyapıtları keşfedin.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="gallery.html">
+    <link rel="icon" href="/favicon.ico">
+    <title>Galeri - Jasmine Art House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :focus-visible { outline: 2px solid #ff6b35; outline-offset: 2px; }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+      }
+      .artwork-image img, .related-image img, .thumbnail-img, .artwork-detail-image, .related-img { aspect-ratio: 4/3; width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <!-- Light Beam Animation -->
+    <div class="light-beam-container">
+        <div class="vertical-light-beam"></div>
+        <div class="light-particle particle-1"></div>
+        <div class="light-particle particle-2"></div>
+        <div class="light-particle particle-3"></div>
+        <div class="light-particle particle-4"></div>
+        <div class="light-particle particle-5"></div>
+        <div class="light-particle particle-6"></div>
+        <div class="light-particle particle-7"></div>
+        <div class="light-particle particle-8"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Jasmine Art House</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-translate="nav-home">Ana Sayfa</a></li>
+                <li><a href="about.html" data-translate="nav-about">Hakkımızda</a></li>
+                <li><a href="gallery.html" class="active" data-translate="nav-gallery">Galeri</a></li>
+                <li><a href="studio.html" data-translate="nav-studio">Stüdyo</a></li>
+                <li><a href="contact.html" data-translate="nav-contact">İletişim</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Gallery Hero Section -->
+    <section class="gallery-hero">
+        <div class="container">
+            <div class="gallery-hero-content">
+                <h1 class="gallery-hero-title">
+                    Koleksiyonumuz
+                </h1>
+                <p class="gallery-hero-description">
+                    Dünyanın en ünlü sanatçılarından özenle seçilmiş başyapıtlar koleksiyonumuzu keşfedin, yüzyıllar boyunca süren sanatsal mükemmelliği kapsayan.
+                </p>
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Tümü</button>
+                    <button class="filter-btn" data-filter="renaissance">Rönesans</button>
+                    <button class="filter-btn" data-filter="impressionism">İzlenimcilik</button>
+                    <button class="filter-btn" data-filter="post-impressionism">Post-İzlenimcilik</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid Section -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid-extended">
+                <!-- Renaissance Period -->
+                <div class="gallery-item-extended" data-category="renaissance">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/69396175_2595091537264389_3640858034384788996_n.jpg" alt="Mona Lisa" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Mona Lisa</h3>
+                        <p class="artist">Leonardo da Vinci</p>
+                        <p class="year">1503-1519</p>
+                        <p class="medium">Oil on poplar panel</p>
+                        <p class="dimensions">77 cm × 53 cm</p>
+                        <p class="description">The Mona Lisa is one of the most famous and enigmatic paintings in the world. Leonardo's masterpiece is renowned for the subject's mysterious smile and the innovative sfumato technique.</p>
+                        <div class="artwork-details">
+                            <span class="period">Renaissance</span>
+                            <span class="location">Louvre Museum, Paris</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=mona-lisa" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item-extended" data-category="renaissance">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/72432241_2445188949082244_9065543067191274815_n.jpg" alt="Girl with a Pearl Earring" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Girl with a Pearl Earring</h3>
+                        <p class="artist">Johannes Vermeer</p>
+                        <p class="year">1665</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">44.5 cm × 39 cm</p>
+                        <p class="description">Often called the "Dutch Mona Lisa," this masterpiece by Vermeer is celebrated for its exquisite lighting and the mysterious gaze of the young woman.</p>
+                        <div class="artwork-details">
+                            <span class="period">Dutch Golden Age</span>
+                            <span class="location">Mauritshuis, The Hague</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=girl-pearl-earring" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <!-- Impressionism Period -->
+                <div class="gallery-item-extended" data-category="impressionism">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/173182929_1131649517309808_3358326417970726616_n.jpg" alt="Impression, Sunrise" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Impression, Sunrise</h3>
+                        <p class="artist">Claude Monet</p>
+                        <p class="year">1872</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">48 cm × 63 cm</p>
+                        <p class="description">This painting gave the Impressionist movement its name. Monet's depiction of the port of Le Havre at sunrise showcases his revolutionary approach to light and color.</p>
+                        <div class="artwork-details">
+                            <span class="period">Impressionism</span>
+                            <span class="location">Musée Marmottan Monet, Paris</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=impression-sunrise" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item-extended" data-category="impressionism">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/262103182_1800396446812884_7002172921974750575_n.jpg" alt="Luncheon on the Grass" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Luncheon on the Grass</h3>
+                        <p class="artist">Édouard Manet</p>
+                        <p class="year">1863</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">208 cm × 264.5 cm</p>
+                        <p class="description">This controversial painting broke with academic conventions and is considered a pivotal work in the transition from Realism to Impressionism.</p>
+                        <div class="artwork-details">
+                            <span class="period">Impressionism</span>
+                            <span class="location">Musée d'Orsay, Paris</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=luncheon-grass" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <!-- Post-Impressionism Period -->
+                <div class="gallery-item-extended" data-category="post-impressionism">
+                    <div class="artwork-image">
+                        <img src="art-house-optimized/489029899_18244397203303043_8458864157204107527_n.jpg" alt="The Starry Night" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>The Starry Night</h3>
+                        <p class="artist">Vincent van Gogh</p>
+                        <p class="year">1889</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">73.7 cm × 92.1 cm</p>
+                        <p class="description">Painted from memory during his stay at the Saint-Paul-de-Mausole asylum, this masterpiece is one of van Gogh's most recognizable works.</p>
+                        <div class="artwork-details">
+                            <span class="period">Post-Impressionism</span>
+                            <span class="location">Museum of Modern Art, New York</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=starry-night" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item-extended" data-category="post-impressionism">
+                    <div class="artwork-image">
+                        <img src="art-house-optimized/47582516_407205326757386_3643775761944381717_n.jpg" alt="Self-Portrait" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Self-Portrait</h3>
+                        <p class="artist">Vincent van Gogh</p>
+                        <p class="year">1889</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">65 cm × 54 cm</p>
+                        <p class="description">One of van Gogh's many self-portraits, this work reflects his emotional state and artistic development during his time in Saint-Rémy.</p>
+                        <div class="artwork-details">
+                            <span class="period">Post-Impressionism</span>
+                            <span class="location">Musée d'Orsay, Paris</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=self-portrait" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <!-- Modern Period -->
+                <div class="gallery-item-extended" data-category="modern">
+                    <div class="artwork-image">
+                        <img src="art-house-optimized/266746404_641421820225995_4152542423772866702_n.jpg" alt="The Scream" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>The Scream</h3>
+                        <p class="artist">Edvard Munch</p>
+                        <p class="year">1893</p>
+                        <p class="medium">Oil, tempera, and pastel on cardboard</p>
+                        <p class="dimensions">91 cm × 73.5 cm</p>
+                        <p class="description">One of the most iconic images in art history, The Scream represents the anxiety of the modern human condition and has become a universal symbol of existential angst.</p>
+                        <div class="artwork-details">
+                            <span class="period">Expressionism</span>
+                            <span class="location">National Gallery, Oslo</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=scream" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+
+                <div class="gallery-item-extended" data-category="modern">
+                    <div class="artwork-image">
+                        <img src="art-house-optimized/524751663_18255950344303043_5384485881421075244_n.jpg" alt="Head" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info-extended">
+                        <h3>Head</h3>
+                        <p class="artist">Amadeo de Souza-Cardoso</p>
+                        <p class="year">1915</p>
+                        <p class="medium">Oil on canvas</p>
+                        <p class="dimensions">61 cm × 50 cm</p>
+                        <p class="description">A pioneering work of Portuguese modernism, this painting demonstrates the artist's innovative approach to form and color.</p>
+                        <div class="artwork-details">
+                            <span class="period">Modernism</span>
+                            <span class="location">Museu Nacional de Arte Contemporânea, Lisbon</span>
+                        </div>
+                        <a href="artwork-detail.html?artwork=head" class="view-artwork-btn">Eseri Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Information Section -->
+    <section class="gallery-info">
+        <div class="container">
+            <div class="info-content">
+                <h2 class="section-title">Koleksiyonumuz <span class="highlight">Hakkında</span></h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3>Küratörlük Yaklaşımı</h3>
+                        <p>Koleksiyonumuz, farklı dönemler ve akımlar boyunca sanatsal ifadenin evrimini temsil etmek için özenle küratörlüğü yapılmıştır. Her parça, tarihi önemi, sanatsal değeri ve etkileyici bir hikaye anlatma yeteneği için seçilmiştir.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Koruma</h3>
+                        <p>Bu başyapıtların gelecek nesiller için korunmasını sağlamak için en yüksek koruma standartlarını sürdürüyoruz. Konservatör ekibimiz, her sanat eserinin bütünlüğünü korumak için durmaksızın çalışıyor.</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>Erişilebilirlik</h3>
+                        <p>Sanatın herkes için erişilebilir olması gerektiğine inanıyoruz. Galerimiz, ziyaretçilerin her parça ile kişisel bir düzeyde bağlantı kurmasına olanak tanıyan samimi bir görüntüleme deneyimi sağlamak için tasarlanmıştır.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2>Galerimizi Ziyaret Edin</h2>
+                <p>Bu başyapıtları kişisel olarak deneyimleyin. Galerimiz halka açıktır ve yıl boyunca rehberli turlar, eğitim programları ve özel sergiler sunar.</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Galeri Çalışma Saatleri</h3>
+                        <p>Salı - Pazar: 10:00 - 18:00<br>Pazartesi: Kapalı</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Konum</h3>
+                        <p>123 Sanat Mirası Caddesi<br>Kültür Mahallesi<br>Şehir, İl 12345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jasmine Art House</h3>
+                    <p data-translate="footer-collecting">2010'dan Beri Sanat Topluyoruz</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer-navigation">Navigasyon</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav-home">Ana Sayfa</a></li>
+                        <li><a href="about.html" data-translate="nav-about">Hakkımızda</a></li>
+                        <li><a href="gallery.html" data-translate="nav-gallery">Galeri</a></li>
+                        <li><a href="contact.html" data-translate="nav-contact">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-translate="footer-rights">&copy; 2025 Jasmine Art House – Tüm Hakları Saklıdır</p>
+                <p data-translate="footer-essence">SANATTA MİRASIN ÖZÜ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+    <script>
+        // Gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item-extended');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                            item.style.animation = 'fadeInUp 0.6s ease';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

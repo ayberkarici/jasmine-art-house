@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jasmine Art House: Sanatta Miras. Kişisel koleksiyonlar, stüdyo anları ve zamansız başyapıtlarla modern bir sanat deneyimi.">
+    <meta property="og:title" content="Jasmine Art House - Sanatta Miras">
+    <meta property="og:description" content="Zanaatkârlığın mirasını kutlayan modern sanat deneyimi.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="tr_TR">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="index.html">
+    <link rel="icon" href="/favicon.ico">
+    <title>Jasmine Art House - Sanatta Miras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :focus-visible { outline: 2px solid #ff6b35; outline-offset: 2px; }
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after { animation: none !important; transition: none !important; }
+      }
+      .artwork-image img, .related-image img, .thumbnail-img, .artwork-detail-image, .related-img { aspect-ratio: 4/3; width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <!-- Enhanced Circular Light Beam Animation -->
+    <div class="light-beam-container">
+        <div class="circular-light-beam"></div>
+        <div class="light-particle particle-1"></div>
+        <div class="light-particle particle-2"></div>
+        <div class="light-particle particle-3"></div>
+        <div class="light-particle particle-4"></div>
+        <div class="light-particle particle-5"></div>
+        <div class="light-particle particle-6"></div>
+        <div class="light-particle particle-7"></div>
+        <div class="light-particle particle-8"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Jasmine Art House</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-translate="nav-home">Ana Sayfa</a></li>
+                <li><a href="about.html" data-translate="nav-about">Hakkımızda</a></li>
+                <li><a href="gallery.html" data-translate="nav-gallery">Galeri</a></li>
+                <li><a href="studio.html" data-translate="nav-studio">Stüdyo</a></li>
+                <li><a href="contact.html" data-translate="nav-contact">İletişim</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-light-orbs"></div>
+        <div class="hero-content">
+            <div class="year">2025</div>
+            <h1 class="hero-title">
+                <span data-translate="hero-title">Sanatta</span> <span class="highlight" data-translate="hero-title-highlight">Miras</span>
+            </h1>
+            <p class="hero-description" data-translate="hero-description">
+                Nesiller boyunca süregelen zanaatkarlığı kutlayın, sizi sanatsal mirasın kalbiyle buluşturan özel bir deneyim.
+            </p>
+            <div class="hero-buttons">
+                <a href="gallery.html" class="btn-primary" data-translate="hero-cta">Galeriyi Ziyaret Et</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-artworks">
+                <div class="artwork-item artwork-1">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="The Starry Night" class="floating-artwork-img" loading="lazy">
+                </div>
+                <div class="artwork-item artwork-2">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa" class="floating-artwork-img" loading="lazy">
+                </div>
+                <div class="artwork-item artwork-3">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/1280px-Monet_-_Impression%2C_Sunrise.jpg" alt="Impression, Sunrise" class="floating-artwork-img" loading="lazy">
+                </div>
+                <div class="artwork-item artwork-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/1665_Girl_with_a_Pearl_Earring.jpg/800px-1665_Girl_with_a_Pearl_Earring.jpg" alt="Girl with a Pearl Earring" class="floating-artwork-img" loading="lazy">
+                </div>
+                <div class="artwork-item artwork-5">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg/800px-Edvard_Munch%2C_1893%2C_The_Scream%2C_oil%2C_tempera_and_pastel_on_cardboard%2C_91_x_73_cm%2C_National_Gallery_of_Norway.jpg" alt="The Scream" class="floating-artwork-img" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title" data-translate="journey-title">Zaman İçinde Bir <span class="highlight">Yolculuk</span></h2>
+                <p class="section-description" data-translate="journey-description">
+                    Geleneğin sanatla buluştuğu bir dünyaya adım atın. Burada, her parçası sanatsal tarihin katmanlarını, titiz zanaatkarlığı ve mirasın kalıcı güzelliğini ortaya koyan kişisel bir sanat koleksiyonunu keşfetmeye davet edilirsiniz.
+                </p>
+                <a href="about.html" class="btn-secondary" data-translate="about-cta">Hakkımızda</a>
+            </div>
+            <div class="about-visual">
+                <div class="scattered-artworks" aria-hidden="true">
+                    <div class="artwork-item artwork-6">
+                        <img src="cizimler-optimized/69396175_2595091537264389_3640858034384788996_n.jpg" alt="" class="floating-artwork-img" loading="lazy" width="140" height="180">
+                    </div>
+                    <div class="artwork-item artwork-7">
+                        <img src="cizimler-optimized/72432241_2445188949082244_9065543067191274815_n.jpg" alt="" class="floating-artwork-img" loading="lazy" width="160" height="200">
+                    </div>
+                    <div class="artwork-item artwork-8">
+                        <img src="cizimler-optimized/173182929_1131649517309808_3358326417970726616_n.jpg" alt="" class="floating-artwork-img" loading="lazy" width="130" height="170">
+                    </div>
+                    <div class="artwork-item artwork-9">
+                        <img src="cizimler-optimized/262103182_1800396446812884_7002172921974750575_n.jpg" alt="" class="floating-artwork-img" loading="lazy" width="150" height="190">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title" data-translate="gallery-title">Mirasın İzleri</h2>
+            <p class="section-description" data-translate="gallery-subtitle">Zamansız Başyapıtlar</p>
+            <p class="gallery-subtitle" data-translate="gallery-description">Jasmine Art House'ta sergilenen her parça hem görsel çekiciliği hem de sanatsal mirasın ruhunu somutlaştırır.</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/69396175_2595091537264389_3640858034384788996_n.jpg" alt="Çizim 1" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Klasik Çizim</h3>
+                        <p>Orijinal Sanat Eseri, 2024</p>
+                        <a href="artwork-detail.html?artwork=drawing-1" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/72432241_2445188949082244_9065543067191274815_n.jpg" alt="Çizim 2" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Modern Çizim</h3>
+                        <p>Orijinal Sanat Eseri, 2024</p>
+                        <a href="artwork-detail.html?artwork=drawing-2" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/173182929_1131649517309808_3358326417970726616_n.jpg" alt="Çizim 3" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <div class="artwork-info">
+                            <h3>Abstrakt Çizim</h3>
+                            <p>Orijinal Sanat Eseri, 2024</p>
+                            <a href="artwork-detail.html?artwork=drawing-3" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/262103182_1800396446812884_7002172921974750575_n.jpg" alt="Çizim 4" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Portre Çizimi</h3>
+                        <p>Orijinal Sanat Eseri, 2024</p>
+                        <a href="artwork-detail.html?artwork=drawing-4" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/282105844_1091405804742649_5302536114031024510_n.jpg" alt="Çizim 5" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Manzara Çizimi</h3>
+                        <p>Orijinal Sanat Eseri, 2024</p>
+                        <a href="artwork-detail.html?artwork=drawing-5" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="artwork-image">
+                        <img src="cizimler-optimized/278965981_166623009058422_74768614761505831_n.jpg" alt="Çizim 6" class="artwork-img" loading="lazy">
+                    </div>
+                    <div class="artwork-info">
+                        <h3>Figür Çizimi</h3>
+                        <p>Orijinal Sanat Eseri, 2024</p>
+                        <a href="artwork-detail.html?artwork=drawing-6" class="view-artwork" data-translate="view-artwork">Eseri Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-cta">
+                <a href="gallery.html" class="btn-primary" data-translate="gallery-cta">Galeriyi Ziyaret Et</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Studio Photography Section -->
+    <section id="studio" class="studio-photography">
+        <div class="container">
+            <h2 class="section-title" data-translate="studio-title">Stüdyo Anları</h2>
+            <p class="section-description" data-translate="studio-description">Perde Arkası: Yaratıcı Süreci Yakalama</p>
+            <div class="studio-photography-grid">
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-1" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/84348462_1244103439122656_4854646270982173535_n.jpg" alt="Studio Photo 1" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Yaratıcı Süreç</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-2" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/101985097_706655780151098_6322115910712367376_n.jpg" alt="Studio Photo 2" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Sanat Atölyesi</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-3" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/266746404_641421820225995_4152542423772866702_n.jpg" alt="Studio Photo 3" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Çalışma Ortamı</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-4" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/489029899_18244397203303043_8458864157204107527_n.jpg" alt="Studio Photo 4" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Sanat Eserleri</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-5" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/524751663_18255950344303043_5384485881421075244_n.jpg" alt="Studio Photo 5" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Detay Çalışması</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="studio-photo-item">
+                    <a href="artwork-detail.html?artwork=studio-6" class="studio-photo-link">
+                        <div class="artwork-image">
+                            <img src="art-house-optimized/47582516_407205326757386_3643775761944381717_n.jpg" alt="Studio Photo 6" class="artwork-img" loading="lazy">
+                        </div>
+                        <div class="artwork-details">
+                            <h3>Final Dokunuşlar</h3>
+                            <p>Art House Seansı, 2024</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <h2 data-translate="contact-title">İletişime Geçin</h2>
+                <p data-translate="contact-description">Misyonumuz, sanatsal mirası korumak ve sergilemek, ziyaretçileri çağdaş bir platform aracılığıyla geleneğin zengin güzelliğiyle etkileşim kurmaya davet etmektir.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Jasmine Art House</h3>
+                    <p data-translate="footer-collecting">2010'dan Beri Sanat Topluyoruz</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 data-translate="footer-navigation">Navigasyon</h4>
+                    <ul>
+                        <li><a href="index.html" data-translate="nav-home">Ana Sayfa</a></li>
+                        <li><a href="about.html" data-translate="nav-about">Hakkımızda</a></li>
+                        <li><a href="gallery.html" data-translate="nav-gallery">Galeri</a></li>
+                        <li><a href="contact.html" data-translate="nav-contact">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p data-translate="footer-rights">&copy; 2025 Jasmine Art House – Tüm Hakları Saklıdır</p>
+                <p data-translate="footer-essence">SANATTA MİRASIN ÖZÜ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html> 

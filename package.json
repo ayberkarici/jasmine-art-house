@@ -1,0 +1,18 @@
+{
+  "name": "jasmine-art-house",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "typescript": "^5.5.4",
+    "vite": "^5.2.0",
+    "vite-plugin-static-copy": "^1.0.5"
+  }
+}
+
