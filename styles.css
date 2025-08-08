@@ -402,13 +402,7 @@ p {
     overflow: hidden;
 }
 
-.floating-artwork-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    transition: var(--transition-medium);
-    filter: brightness(1) contrast(1.05);
-}
+.floating-artwork-img { width: 100%; height: auto; object-fit: cover; transition: var(--transition-medium); filter: none; }
 
 .artwork-item:hover .floating-artwork-img {
     transform: scale(1.1);
@@ -794,7 +788,7 @@ p {
 .studio-photo-item > img {
     object-fit: cover;
     display: block;
-    height: 100% !important;
+    height: auto !important;
     width: 100% !important;
 }
 
@@ -844,7 +838,8 @@ p {
     color: inherit;
     transition: var(--transition-medium);
 }
-.studio-photo-link.disabled { pointer-events: none; opacity: 0.6; }
+.studio-photo-link.disabled { pointer-events: none; opacity: 1; }
+
 
 .studio-photo-link:hover {
     transform: translateY(-5px);
@@ -913,7 +908,7 @@ p {
 .studio-gallery-item .artwork-image img,
 .studio-photo-item .artwork-image img { object-fit: cover; display: block; height: 100% !important; width: 100% !important; }
 
-.studio-photo-item > img { object-fit: cover; display: block; width: auto !important; height: 100% !important; }
+.studio-photo-item > img { object-fit: cover; display: block; width: 100% !important; height: 100% !important; }
 
 .studio-gallery-item .artwork-info {
     position: absolute;
@@ -994,12 +989,7 @@ p {
 /* Enhanced Mobile Optimizations */
 @media (max-width: 768px) {
     /* Enhanced Mobile Navigation */
-    .nav-container {
-        padding: 0 1rem;
-        position: relative;
-        grid-template-columns: 1fr;
-        justify-items: center;
-    }
+    .nav-container { padding: 0.5rem 1rem; position: relative; display: grid; grid-template-columns: 1fr; justify-items: center; }
     
     .nav-menu {
         position: fixed;
@@ -1016,7 +1006,7 @@ p {
         align-items: center;
         transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1000;
-        gap: 2.4rem;
+        gap: 1.2rem;
     }
     
     .nav-menu.active {
@@ -1024,12 +1014,7 @@ p {
         transform: translateX(0);
     }
     
-    .nav-menu li {
-        margin: 0.25rem 0;
-        opacity: 0;
-        transform: translateY(20px);
-        transition: all 0.3s ease;
-    }
+    .nav-menu li { margin: 0.1rem 0; opacity: 0; transform: translateY(16px); transition: all 0.25s ease; }
     
     .nav-menu.active li {
         opacity: 1;
@@ -1042,17 +1027,11 @@ p {
     .nav-menu li:nth-child(4) { transition-delay: 0.4s; }
     .nav-menu li:nth-child(5) { transition-delay: 0.5s; }
     
-    .nav-menu a {
-        font-size: 1.8rem;
-        padding: 1.75rem 3rem;
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        display: block;
-        text-align: center;
-        position: relative;
-        overflow: hidden;
-        color: var(--text-primary);
-    }
+    .nav-menu a { font-size: 1.6rem; padding: 1.25rem 2.25rem; border-radius: 12px; transition: all 0.25s ease; display: block; text-align: center; position: relative; overflow: hidden; color: var(--text-primary); }
+
+    /* Center hamburger at all times on mobile */
+    .mobile-menu-toggle { margin: 0 auto; left: 0; right: 0; }
+    .nav-menu.active ~ .mobile-menu-toggle { position: relative; top: auto; right: auto; left: auto; margin: 0 auto; z-index: 1001; }
     
     .nav-menu a::before {
         content: '';
@@ -1084,6 +1063,7 @@ p {
         cursor: pointer;
         z-index: 1001;
         transition: all 0.3s ease;
+        margin-left: auto;
     }
     
     .mobile-menu-toggle span {
@@ -1111,18 +1091,14 @@ p {
         transform-origin: center;
     }
     
-    .mobile-menu-toggle.active span:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 6px);
-    }
+    .mobile-menu-toggle.active span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
     
     .mobile-menu-toggle.active span:nth-child(2) {
         opacity: 0;
         transform: translateY(-50%) scale(0);
     }
     
-    .mobile-menu-toggle.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(6px, -6px);
-    }
+    .mobile-menu-toggle.active span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
     
     .language-switch {
         margin-left: auto;
