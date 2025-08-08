@@ -1,6 +1,5 @@
 User-agent: *
-Disallow: /admin.html
-Disallow: /login.html
+# Removed demo admin/login pages from build; no need to disallow
 
 Sitemap: /sitemap.xml
 

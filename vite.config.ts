@@ -15,8 +15,8 @@ export default defineConfig({
         studio: 'studio.html',
         contact: 'contact.html',
         artwork: 'artwork-detail.html',
-        admin: 'admin.html',
-        login: 'login.html'
+        // admin: 'admin.html',
+        // login: 'login.html'
       }
     }
   },
